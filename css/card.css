@@ -162,7 +162,7 @@
     transform: translate(-50%, -50%);
     /* border: 4px solid black; */
     background-color: #242424;
-    background-image: url(../images/catMom.jpg);
+    background-image: url(/images/catMom.jpg);
     background-size: cover;
     /* opacity: 90%; */
     /* background: url(''); */
@@ -310,7 +310,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     /* background-color: #242424; */
-    background-image: url(../images/FlowerClyde.jpg);
+    background-image: url(/images/FlowerClyde.jpg);
     background-size: cover;
     background-position: 0% 40%;
     box-shadow: inset 0 0 5px 5px black;
@@ -381,7 +381,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     /* background-color: #242424; */
-    background-image: url(../images/cuddlyShaq.jpg);
+    background-image: url(/images/cuddlyShaq.jpg);
     background-size: cover;
     background-position: 0% 20%;
     box-shadow: inset 0 0 5px 5px black;
