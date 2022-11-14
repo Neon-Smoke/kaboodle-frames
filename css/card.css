@@ -7,11 +7,17 @@
     padding: 0;
 }
 
-.body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: space-between;
+.main {
+    display: grid;
+    height: 100vh;
+    width: auto;
+    /* flex-direction: column; */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    justify-items: center;
+    align-items: center;
+    /* justify-content: center; */
+    /* align-content: center; */
 }
 
 /* CARD CONTENTS */
@@ -96,13 +102,14 @@
 /* MIDDLE CARD */
 
 .card1 {
-    position: absolute;
-    flex-wrap: wrap;
+    position: relative;
+    order: 2;
+    display: grid;
     height: 400px;
     width: 300px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
     transform-origin: top left;
     transition: 0.4s ease-in-out;
     /* transition: 0.4s; */
@@ -188,13 +195,13 @@
 
 
 .card2 {
-    /* display: flex; */
-    position: absolute;
+    display: grid;
+    position: relative;
     height: 400px;
     width: 300px;
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
+    /* top: 50%; */
+    /* left: 25%; */
+    /* transform: translate(-50%, -50%); */
     transform-origin: top left;
     transition: 0.4s ease-in-out;
     background: white;
@@ -301,7 +308,7 @@
 
 
 .card2Background {
-    display: block;
+    /* display: block; */
     position: absolute;
     overflow: hidden;
     z-index: 2;
@@ -322,12 +329,14 @@
 /* RIGHT CARD */
 
 .card3 {
-    position: absolute;
+    display: grid;
+    order: 3;
+    position: relative;
     height: 400px;
     width: 300px;
-    top: 50%;
-    left: 75%;
-    transform: translate(-50%, -50%);
+    /* top: 100%; */
+    /* left: 75%; */
+    /* transform: translate(-50%, -50%); */
     transform-origin: top left;
     transition: 0.4s ease-in-out;
     background: white;
@@ -393,4 +402,13 @@
 .card3:focus {
     transition: 0.4s ease-in-out;
     scale: 104%;
+}
+
+@media only screen and (max-width: 1270px) {
+    .main {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: none;
+        gap: 3em;
+    }
 }
